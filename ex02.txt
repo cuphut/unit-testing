@@ -1,0 +1,16 @@
+getLetterScore()
+ if (Score >= 7.0) return 'B';
+ if (Score >= 5.0) return 'C';
+
+Score()
+if (_score > 10 || _score < 0)
+{
+ throw new SystemException("Score must not exeed 10.0");
+}
+this._score = value;
+
+getAverageScore()
+if (students.Count == 0)
+{
+  throw new SystemException("Student list is empty");
+}
